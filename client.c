@@ -66,9 +66,9 @@ void* ClientWrite()
 
 // void* ClientRead()
 // ==============================================
-//  Server로 부터 읽어서 Read에 저장한다.
-//  read_length에는 길이가 저장된다.
-//  EOF를 읽은 경우 bye() 함수 실행
+// Server로 부터 읽어서 Read에 저장한다.
+// read_length에는 길이가 저장된다.
+// EOF를 읽은 경우 bye() 함수 실행
 void* ClientRead()
 {
     char read_buffer[100];
