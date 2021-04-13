@@ -218,7 +218,7 @@ int Init()
     struct sockaddr_in addr = {0};
     addr.sin_family = AF_INET;  // IPv4
     addr.sin_port = htons(12345);
-    addr.sin_addr.s_addr = inet_addr("15.164.48.55");  // 서버의 ip 주소
+    addr.sin_addr.s_addr = inet_addr("");  // 서버의 ip 주소
 
     // int connect(int sockfd, const struct sockaddr* serv_addr, socklen_t addrlen)
     // ============================================================================
