@@ -65,7 +65,9 @@ int ListenInit()
 {
     int ret = 0;
 
-    // int listen(SOCKET s, int backlog) : 특정 Socket Client의 접속을 받을 수 있도록 만들어주는 함수
+    // int listen(SOCKET s, int backlog)
+    // ======================================================================
+    // 특정 Socket Client의 접속을 받을 수 있도록 만들어주는 함수
     // s: bind된 Socket
     // backlog: 연결 큐에 최대 몇개의 연결 처리할 데이터를 담을지를 담은 변수
     ret = listen(fd, 2);
@@ -93,9 +95,9 @@ void bye()
 
 // void* ServerRead()
 // ==============================================
-//  Client로 부터 읽어서 Read에 저장한다.
-//  read_length에는 길이가 저장된다.
-//  EOF를 읽은 경우 flag를 1로 변경한 후 함수 종료
+// Client로 부터 읽어서 Read에 저장한다.
+// read_length에는 길이가 저장된다.
+// EOF를 읽은 경우 flag를 1로 변경한 후 함수 종료
 void* ServerRead()
 {
     while (1) {
